@@ -3,13 +3,29 @@ Theme name: custom
 Author: Jaron van Well
 */
 body {
-  background: #2d495c;
-  color: white;
+  background: #4c7c43;
+  color: #2b2b2b;
 }
 body header {
   background: grey;
+}
+body header .top_menu {
+  position: relative;
+}
+body header .top_menu ul li {
+  list-style-type: none;
+  text-align: center;
+  background: white;
+  padding: 5px 5px;
+  margin: 5px;
+}
+body header .top_menu ul li a {
+  color: #2b2b2b;
+  display: block;
+}
+body .container main {
+  background: white;
   width: 100%;
-  height: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
