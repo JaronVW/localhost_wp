@@ -2,7 +2,13 @@
 Theme name: custom
 Author: Jaron van Well
 */
-
-body{
-    background: black;
+body {
+  background: #205245;
+  color: white;
 }
+body header {
+  background: grey;
+  height: 100px;
+}
+
+/*# sourceMappingURL=style.css.map */

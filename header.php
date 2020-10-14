@@ -7,4 +7,8 @@
     <title>Document</title>
 </head>
 <body <?php body_class()?>>
-    
+
+
+<header>
+
+</header>
