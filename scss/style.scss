@@ -1,14 +1,18 @@
+@import 'variables.scss';
+
 /* 
 Theme name: custom
 Author: Jaron van Well
 */
 
 body{
-    background: rgb(32, 82, 69);
+    background: $base-color;
     color: white;
+
 
     header{
         background: grey;
+        width: 100%;
         height: 100px;
     }
 }

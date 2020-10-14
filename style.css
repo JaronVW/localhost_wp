@@ -3,11 +3,12 @@ Theme name: custom
 Author: Jaron van Well
 */
 body {
-  background: #205245;
+  background: #2d495c;
   color: white;
 }
 body header {
   background: grey;
+  width: 100%;
   height: 100px;
 }
 
