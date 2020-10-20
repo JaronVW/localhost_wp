@@ -1,24 +1,32 @@
 <?php wp_footer();?>
 
-<footer class="footer" >
-    <div class="container"  >
+<footer class="footer">
+    <div class="container">
         <div class="row">
-            <nav class="col" >      
-                <h3>Contact</h3>
+            <nav class="col">
+                <h4>Contact</h4>
                 <ul>
-                    <li>A: a</li>
-                    <li>B: a</li>
-                    <li>C: a</li>
-                    <li>4: a</li>
-                    <li>5: a</li>
+                    <li>A: Graaf Wichmanlaan 60, 1405 HC Bussum</li>
+                    <li>E: info@klompvoet.nl</li>
+                    <li>T: 06-43992363</li>
+                    <li>F: Ga naar Facebook</li>
+                  
                 </ul>
             </nav>
             <div class="form col">
-                <h3>Abbonneer op de nieuwsbrief</h3>
-                <form action="" method="post">
-                    <input type="text" name="" id="">
-                    <input type="text" name="" id="">
-                    <input type="text" name="" id="">
+                <h4>Abonneer op de nieuwsbrief</h4>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email adres</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter email">
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Voor en achternaam</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>  
+                    <button type="submit" class="btn btn-dark">Submit</button>
                 </form>
             </div>
         </div>
@@ -26,4 +34,5 @@
 </footer>
 
 </body>
+
 </html>

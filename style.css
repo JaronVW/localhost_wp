@@ -24,6 +24,9 @@ body {
   color: #2b2b2b;
   font-family: "montserrat";
 }
+body .navbar {
+  padding: 0;
+}
 body header {
   color: white;
   height: 35vh;
@@ -74,6 +77,11 @@ body main {
   margin-bottom: 50px;
   animation: load_in 1s;
 }
+body main .banner_text {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
 body main h1 {
   padding: 5px 0 60px 0;
 }
@@ -86,12 +94,17 @@ body footer {
   background: #2C545C;
   color: #f5f5f5;
   position: static;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 body footer nav ul {
   margin-bottom: 0;
 }
 body footer nav ul li {
   list-style: none;
+}
+body footer form {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */

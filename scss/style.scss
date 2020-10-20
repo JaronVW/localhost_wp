@@ -16,11 +16,9 @@ body {
     font-family: 'montserrat';
 
 
-    a:hover {
-        // text-decoration: none;
-        // transition: 3s;
+    .navbar{
+        padding: 0;
     }
-
 
     header {
         color: white;
@@ -103,6 +101,13 @@ body {
     }
 
     main {
+
+        .banner_text{
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 50px;
+        }
+
         min-height: 337px;
 
 
@@ -137,7 +142,6 @@ body {
 
 
 
-
     // .info{
     //     background: #0e3030;
     //     // height: 100px;
@@ -149,6 +153,8 @@ body {
         background: $header_scroll_color;
         color: $base-color;
         position: static;
+        padding-bottom: 20px;
+        padding-top: 20px;
        
 
         // bottom: 0;
@@ -165,6 +171,9 @@ body {
                 }
             }
 
+        }
+        form {
+            display: block;
         }
 
     }
