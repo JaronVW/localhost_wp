@@ -1,51 +1,171 @@
-@import 'variables.scss';
-
 /* 
 Theme name: custom
 Author: Jaron van Well
 */
+// Made with SCSS
 
-body{
+@import 'variables.scss';
+@import 'keyframes.scss';
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!breakpoint at 575px
+body {
+
+
     background: $base-color;
     color: $base-text-color;
+    font-family: 'montserrat';
 
 
-    header{
-        background: grey;
-        // overflow: auto;
-       
-        
-        .top_menu{
-           position: relative;
-
-                ul{
-                   
-                    li{   
-                        list-style-type: none; 
-                        text-align: center;
-                        background: white;
-                        padding: 5px 5px;
-                        margin: 5px;  
-
-                        a{
-                            color: $base-text-color;
-                            display: block;
-                        }
-                    }// li
-                }// ul     
-        }// top_menu
-
-    }// header
-
-    .container{
-        
-        main{
-            background: white;
-            width: 100%;
-        }
+    a:hover {
+        // text-decoration: none;
+        // transition: 3s;
     }
-    
+
+
+    header {
+        color: white;
+        height: 35vh;
+        background: url("img/klompvoet-home.jpg");
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+
+        .top_menu {
+            z-index: 40;
+            position: fixed;
+            transition: .5s;
+            left: 0px;
+            right: 0px;
+            text-align: center;
+
+            ul {
+
+
+                li {
+                    list-style-type: none;
+                    text-align: center;
+                    display: inline-block;
+
+                    padding: 5px 5px;
+                    margin: 5px;
+                    cursor: pointer;
+
+                    a {
+                        color: $header_link_color;
+
+                    }
+                }
+
+                // li
+                li:hover {
+                    // background: white;
+                }
+
+                //li:hover
+            }
+
+            // ul     
+        }
+
+        // top_menu
+
+        .banner_title {
+            animation: $load_in;
+            position: relative;
+            top: 50%;
+
+            a {
+                display: inline-block;
+                background: $button_color;
+                transition: 0.2s;
+                color: $header_link_color;
+                padding: 5px 20px;
+                border-radius: 5px;
+            }
+
+            a:hover {
+                padding: 5px 25px;
+                background: #00a38d;
+            }
+
+        }
+
+        //banner_title
+
+    }
+
+    // header
+
+    .container {
+        // background: beige;
+        // margin-bottom: 500px;
+        // padding-bottom: 100px;
+    }
+
+    main {
+        min-height: 337px;
+
+
+        h1 {
+            padding: 5px 0 60px 0;
+        }
+
+        margin-top: 50px;
+        margin-bottom: 50px;
+        // visibility: hidden;
+        // margin-top: 50px;
+        animation: $load_in;
+        // min-height: 323px;
+        // height: 12000px;
+
+        .post {
+            box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
+            padding: 5px;
+            border-radius: 4px;
+            // background: purple;
+
+            .is-style-fill {
+                // background: green;
+            }
+        }
+        .fullwidth_img{
+            
+        }
+
+
+    }
 
 
 
+
+    // .info{
+    //     background: #0e3030;
+    //     // height: 100px;
+    // }
+
+
+    footer {
+
+        background: $header_scroll_color;
+        color: $base-color;
+        position: static;
+       
+
+        // bottom: 0;
+        // margin-top: 100px;
+        .container {}
+
+        nav {
+            ul {
+                margin-bottom: 0;
+
+                li {
+
+                    list-style: none;
+                }
+            }
+
+        }
+
+    }
 }

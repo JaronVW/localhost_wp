@@ -1,13 +1,15 @@
 <?php get_header();?>
-<div class="container pt-5 pb-5">
+<main>
+    <div class="container ">
 
-<h1> <?php the_title()?> </h1>
 
-<?php  if(have_posts()) : while(have_posts()) : the_post(); ?>
 
-    <?php the_content()?>
+    <?php  if(have_posts()) : while(have_posts()) : the_post(); ?>
 
-<?php endwhile; endif;?>
+        <?php the_content()?>
 
-</div>
+    <?php endwhile; endif;?>
+
+    </div>
+</main>
 <?php get_footer();?>
